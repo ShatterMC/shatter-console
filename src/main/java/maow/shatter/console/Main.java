@@ -32,7 +32,7 @@ public class Main extends Console {
         System.out.print("> ");
         String[] input = scanner.nextLine().split("\\s+");
         String command = input[0];
-        String[] args = Arrays.copyOfRange(input, 1, input.length - 1);
+        String[] args = Arrays.copyOfRange(input, 1, input.length);
         processInput(command, args);
     }
 
