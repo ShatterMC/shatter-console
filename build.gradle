@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.maowcraft:quickconsole:argmanager-only-SNAPSHOT'
+    implementation 'com.github.maowcraft:ncycloapi:2.5.0'
+}
+
+application {
+    mainClassName = 'maow.shatter.console.Main'
+}
